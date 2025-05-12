@@ -1,0 +1,19 @@
+# Path data
+train_clean: "data/train/clean"
+train_noisy: "data/train/noisy"
+
+# Hyperparameters
+lr: 0.001
+batch_size: 16
+epochs: 50
+sample_rate: 16000
+segment_length: 48000  # 3 detik untuk 16kHz
+
+# Model settings
+n_fft: 512
+hop_length: 256
+win_length: 512
+
+# Save settings
+save_dir: "checkpoints"
+save_interval: 5

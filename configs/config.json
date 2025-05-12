@@ -1,0 +1,18 @@
+{
+    "model_config": {
+      "input_dim": 257,
+      "hidden_dims": [512, 512, 512],
+      "output_dim": 257,
+      "dropout": 0.2
+    },
+    "training_config": {
+      "learning_rate": 0.001,
+      "batch_size": 6,
+      "epochs": 50
+    },
+    "data_config": {
+      "base_dir": "data",
+      "sample_rate": 16000
+    }
+  }
+  
