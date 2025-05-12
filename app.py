@@ -6,7 +6,6 @@ import soundfile as sf
 import numpy as np
 import matplotlib.pyplot as plt
 from models.dnn_model import DNNSpeechEnhancer
-from train import config  # Import konfigurasi dari file training
 
 # --- Fungsi Plot Perbandingan ---
 def plot_comparison(original, enhanced, sr):
@@ -98,8 +97,7 @@ if audio_file is not None:
             with torch.no_grad():
                 enhanced = model(audio_tensor)
             enhanced_audio = enhanced.squeeze().numpy()
-            
-            # Simpan hasil
+
             temp_output = "temp_output.wav"
             sf.write(temp_output, enhanced_audio, sr)
             
